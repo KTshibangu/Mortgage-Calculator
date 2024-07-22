@@ -33,7 +33,7 @@ calculateBtn.addEventListener('click', () => {
     })
 
     if(isNaN(amount) || amount <= 0){
-        document.getElementById('amount-alert').style.display = 'blcok';
+        document.getElementById('amount-alert').style.display = 'block';
         document.getElementById('mortgage-amount-main').classList.add = 'error';
         isValid = false;
     } else {
@@ -41,7 +41,7 @@ calculateBtn.addEventListener('click', () => {
     }
 
     if(isNaN(term) || amount <= 0){
-        document.getElementById('term-alert').style.display = 'blcok';
+        document.getElementById('term-alert').style.display = 'block';
         document.getElementById('mortgage-term-main').classList.add = 'error';
         isValid = false;
     } else {
@@ -49,7 +49,7 @@ calculateBtn.addEventListener('click', () => {
     }
 
     if(isNaN(rate) || rate <= 0){
-        document.getElementById('rate-alert').style.display = 'blcok';
+        document.getElementById('rate-alert').style.display = 'block';
         document.getElementById('mortgage-rate-main').classList.add = 'error';
         isValid = false;
     } else {
@@ -57,7 +57,7 @@ calculateBtn.addEventListener('click', () => {
     }
 
     if(!mortgageType) {
-        document.getElementById('mortgage-type-alert').style.display = 'blcok';
+        document.getElementById('mortgage-type-alert').style.display = 'block';
         document.querySelectorAll('.radio-inputs').forEach(el => {
             el.classList.add('error');
         })
